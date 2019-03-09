@@ -28,7 +28,7 @@ init:
 	@go get -u github.com/sipin/gorazor
 
 gen_static:
-	@esc -o gens/static.go -prefix static static
+	@esc -o gens/static.go -pkg="gens" -prefix static static
 
 gen_tpl:
 	# gorazor -watch views gens/views
